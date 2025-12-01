@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: keyball39}
 layers:
-  QWRT:
+  Base:
   - Q
   - W
   - E
@@ -35,12 +35,12 @@ layers:
   - LEFT WIN
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-esc$$', h: SNIPE}
-  - {t: '$$mdi:keyboard-esc$$', h: NUM}
-  - {t: '$$mdi:keyboard-space$$', h: FUN}
-  - {t: '$$mdi:keyboard-return$$', h: SYM}
+  - {t: '$$mdi:keyboard-esc$$', h: Nav.}
+  - {t: '$$mdi:keyboard-space$$', h: Ext.}
+  - {t: '$$mdi:keyboard-return$$', h: Sym.}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-shift$$
-  NUM:
+  Nav.:
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -80,77 +80,77 @@ layers:
   - {t: Sft+\, s: Sft+|}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
-  SYM:
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - $$mdi:bluetooth-off$$
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '-', s: _}
-  - {t: '=', s: +}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - {t: '''', s: '"'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - _
-  - +
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - \
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  Sym.:
+  - {t: Sft+1, s: Sft+!}
+  - {t: Sft+2, s: Sft+@}
+  - {t: Sft+3, s: Sft+#}
+  - {t: Sft+4, s: Sft+$}
+  - {t: Sft+5, s: Sft+%}
+  - {t: Sft+6, s: Sft+^}
+  - {t: Sft+7, s: Sft+&}
+  - {t: Sft+8, s: Sft+*}
+  - {t: Sft+9, s: Sft+(}
+  - {t: Sft+0, s: Sft+)}
+  - {t: AltGr+1, s: AltGr+!}
+  - {t: AltGr+2, s: AltGr+@}
+  - {t: AltGr+3, s: AltGr+#}
+  - {t: AltGr+4, s: AltGr+$}
+  - {t: AltGr+5, s: AltGr+%}
+  - {t: Sft+-, s: Sft+_}
+  - {t: AltGr+7, s: AltGr+&}
+  - {t: AltGr+8, s: AltGr+*}
+  - {t: AltGr+9, s: AltGr+(}
+  - {t: AltGr+0, s: AltGr+)}
+  - '|'
+  - Sft+|
+  - AltGr+|
+  - {t: 'Sft+]', s: 'Sft+}'}
+  - {t: Sft+=, s: Sft++}
+  - {t: AltGr+\, s: AltGr+|}
+  - {t: AltGr+-, s: AltGr+_}
+  - {t: 'Sft+,', s: Sft+<}
+  - {t: Sft+., s: Sft+>}
+  - {t: Sft+/, s: 'Sft+?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-tab-reverse$$
+  - $$mdi:keyboard-tab$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  FUN:
-  - F1
-  - F2
-  - F3
-  - F4
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F5
-  - F6
-  - F7
-  - F8
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - F9
-  - F10
-  - F11
-  - F12
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  Ext.:
+  - $$mdi:bluetooth-off$$
+  - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
+  - R
+  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '4', s: '$$mdi:bluetooth-connect$$'}
+  - {h: '5', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '[', s: '{'}
+  - $$mdi:progress-download$$
+  - S
+  - {t: Sft+\, s: Sft+|}
+  - {t: \, s: '|'}
+  - G
+  - H
+  - {t: Sft+-, s: Sft+_}
+  - {t: '-', s: _}
+  - L
+  - {t: '''', s: '"'}
+  - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
+  - OUT BLE
+  - C
+  - V
+  - {t: 'AltGr+]', s: 'AltGr+}'}
+  - {t: Sft+\, s: Sft+|}
+  - {t: \, s: '|'}
+  - {t: 'Sft+,', s: Sft+<}
+  - {t: Sft+., s: Sft+>}
+  - {t: Sft+/, s: 'Sft+?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -198,7 +198,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - FUN
+  - Ext.
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SCROLL:
   - {t: '$$mdi:transfer$$', type: trans}
