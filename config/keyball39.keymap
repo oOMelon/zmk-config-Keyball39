@@ -85,7 +85,6 @@
             &kp N1      &kp N2    &kp N3   &kp N4      &kp N5          &kp N6      &kp N7    &kp N8      &kp N9     &kp N0
             &kp F1      &kp F2   &kp F3       &kp F4     &kp F5         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT &kp BSPC
             &kp F6      &kp F7     &kp F8     &kp F9     &kp F10        &kp F11    &kp F12 &kp LS(COMMA) &kp LS(DOT) &kp LS(SLASH)
-
             &trans        &trans        &trans        &trans        &trans        &trans   &kp LS(BACKSLASH) &kp DEL                         &trans
             >;
         };
@@ -93,20 +92,20 @@
         sym_layer {
             label = "Sym.";
             bindings = <
- &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)    &kp LS(N6) &kp LS(N7) &kp LS(N8)  &kp LS(N9) &kp LS(N0)
+            &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)    &kp LS(N6) &kp LS(N7) &kp LS(N8)  &kp LS(N9) &kp LS(N0)
             &kp RA(N1) &kp RA(N2) &kp RA(N3) &kp RA(N4) &kp RA(N5)    &kp LS(MINUS) &kp RA(N7) &kp RA(N8) &kp RA(N9) &kp RA(N0)
- &kp NON_US_BSLH &kp LS(NON_US_BSLH) &kp RA(NON_US_BSLH) &kp LS(RIGHT_BRACKET) &kp LS(EQUAL) &kp RA(BACKSLASH) &kp RA(MINUS) &kp LS(COMMA) &kp LS(DOT)
-&trans           &trans        &trans        &kp LS(TAB) &kp TAB        &trans  &trans  &trans                                                                 &trans
+            &kp NON_US_BSLH &kp LS(NON_US_BSLH) &kp RA(NON_US_BSLH) &kp LS(RIGHT_BRACKET) &kp LS(EQUAL) &kp RA(BACKSLASH) &kp RA(MINUS) &kp LS(COMMA) &kp LS(DOT) &kp LS(SLASH)
+            &trans     &trans     &trans    &trans   &kp LS(TAB) &kp TAB  &trans  &trans      &trans
             >;
         };
 
         extra_layer {
             label = "Ext.";
             bindings = <
-&bt BT_CLR  &bt BT_PRV &bt BT_NXT &kp R &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp LEFT_BRACKET
-      &bootloader   &kp S &kp LS(BACKSLASH) &kp BACKSLASH &kp G   &kp H     &kp LS(MINUS) &kp MINUS &kp L   &kp SINGLE_QUOTE
-   &out OUT_TOG &out OUT_BLE &kp C    &kp V   &kp RA(RIGHT_BRACKET)  &kp LS(BACKSLASH) &kp BACKSLASH &kp LS(COMMA) &kp LS(DOT) &kp LS(SLASH)
-&trans  &trans   &trans   &trans   &trans  &trans  &trans  &trans                       &trans
+            &bt BT_CLR  &bt BT_PRV &bt BT_NXT &kp R &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp LEFT_BRACKET
+            &bootloader   &kp S &kp LS(BACKSLASH) &kp BACKSLASH &kp G   &kp H     &kp LS(MINUS) &kp MINUS &kp L   &kp SINGLE_QUOTE
+            &out OUT_TOG &out OUT_BLE &kp C    &kp V   &kp RA(RIGHT_BRACKET)  &kp LS(BACKSLASH) &kp BACKSLASH &kp LS(COMMA) &kp LS(DOT) &kp LS(SLASH)
+            &trans  &trans   &trans   &trans   &trans  &trans  &trans  &trans                       &trans
             >;
         };
 
